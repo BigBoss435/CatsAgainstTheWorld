@@ -6,8 +6,9 @@ public class PlayerMovement : MonoBehaviour
 {
     [SerializeField] private float movementSpeed;
 
-    Vector2 moveDir;
-    Rigidbody2D rb;
+    [HideInInspector]
+    public Vector2 moveDir;
+    public Rigidbody2D rb;
 
    
     // Start is called before the first frame update
