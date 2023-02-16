@@ -13,20 +13,19 @@ public class PlayerMovement : MonoBehaviour
 
     [HideInInspector]
     public bool isFacingLeft;
-    [HideInInspector]
-    public bool isFacingUp;
+    
 
     public bool spawnFacingLeft;
-    public bool spawnFacingUp;
+   
     private Vector2 facingLeft;
-    private Vector2 facingUp;
+    [HideInInspector]
+    public Vector2 lastMovedVector;
    
     // Start is called before the first frame update
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
         facingLeft = new Vector2(-transform.localScale.x, transform.localScale.y);
-        facingUp = new Vector2(transform.localScale.x, -transform.localScale.y);
         if (spawnFacingLeft)
         {
             transform.localScale = facingLeft;
@@ -62,16 +61,6 @@ public class PlayerMovement : MonoBehaviour
             isFacingLeft = true;
             FlipHorizontal();
         }
-        if(moveY > 0 && isFacingUp)
-        {
-            isFacingUp = false;
-            FlipVertical();
-        }
-        if(moveY < 0 && !isFacingUp)
-        {
-            isFacingUp = true;
-            FlipVertical();
-        }
     }
 
     private void Move()
@@ -91,15 +80,4 @@ public class PlayerMovement : MonoBehaviour
         }
     }
 
-    public void FlipVertical()
-    {
-        if (isFacingUp)
-        {
-            transform.localScale = facingUp;
-        }
-        if (!isFacingUp)
-        {
-            transform.localScale = new Vector2(transform.localScale.x, -transform.localScale.y);
-        }
-    }
 }
