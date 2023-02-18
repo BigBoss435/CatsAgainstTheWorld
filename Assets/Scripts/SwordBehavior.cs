@@ -5,6 +5,7 @@ using UnityEngine;
 public class SwordBehavior : ProjectileWeapon
 {
     Sword sword;
+    public ParticleSystem swordParticle;
     // Start is called before the first frame update
     protected override void Start()
     {
@@ -16,5 +17,13 @@ public class SwordBehavior : ProjectileWeapon
     void Update()
     {
         transform.position += direction * sword.speed * Time.deltaTime;
+    }
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+
+
+        Instantiate(swordParticle, transform.position, Quaternion.identity);
+
     }
 }
