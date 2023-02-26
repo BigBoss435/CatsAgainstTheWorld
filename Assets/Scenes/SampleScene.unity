@@ -411,7 +411,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1488340001}
   - component: {fileID: 1488340002}
-  m_Layer: 8
+  m_Layer: 6
   m_Name: Weapon
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -691,17 +691,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8aafc346f0512d74bb3fe99c42dfbe9d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  terrainChunks: []
-  Player: {fileID: 1642719025}
-  checkerRadius: 0
+  terrainChunks:
+  - {fileID: 644383913}
+  - {fileID: 644383913}
+  player: {fileID: 1642719025}
+  checkerRadius: 0.2
+  noTerrainPosition: {x: 0, y: 0, z: 0}
   terrainMask:
     serializedVersion: 2
-    m_Bits: 0
-  currentChunk: {fileID: 0}
+    m_Bits: 512
+  currentChunk: {fileID: 644383913}
   spawnedChunks:
   - {fileID: 644383913}
   maxOpDist: 50
-  optimizerCooldownDuration: 1
+  optimizerCooldownDur: 0
 --- !u!4 &1643143290
 Transform:
   m_ObjectHideFlags: 0
@@ -1012,6 +1015,10 @@ PrefabInstance:
     - target: {fileID: 688113788085386646, guid: 8d19aabf9ccf8834690f67ca4a0ff5d0, type: 3}
       propertyPath: m_Name
       value: Terrain Chunk
+      objectReference: {fileID: 0}
+    - target: {fileID: 4184553888871284757, guid: 8d19aabf9ccf8834690f67ca4a0ff5d0, type: 3}
+      propertyPath: m_Layer
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
