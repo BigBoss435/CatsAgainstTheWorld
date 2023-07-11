@@ -72,7 +72,5 @@ public class PlayerStats : MonoBehaviour
         currentMight = characterData.Might;
         currentProjectileSpeed= characterData.ProjectileSpeed;
         currentProjectileNumber= characterData.ProjectileNumber;
-       
     }
-    
 }
