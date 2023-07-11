@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6c0ce764356a59542ba6bd3cbb17a92a, type: 3}
   m_Name: Orange
   m_EditorClassIdentifier: 
-  moveSpeed: 0
-  maxHealth: 0
+  moveSpeed: 2
+  maxHealth: 10
   damage: 0

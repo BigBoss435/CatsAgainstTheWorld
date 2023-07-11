@@ -4,15 +4,9 @@ using UnityEngine;
 
 public class WeaponController : MonoBehaviour
 {
-    [SerializeField] public GameObject weaponPrefab;
+    [Header("Weapon Stats")]
     public WeaponScriptableObject weaponData;
-    //Weapons stats
-    public float damage;
-    public float speed;
-    public float cooldown;
-
     float currentCooldown;
-    public int pierce;
 
     protected PlayerMovement pm;
 
