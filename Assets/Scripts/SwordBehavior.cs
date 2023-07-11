@@ -24,7 +24,5 @@ public class SwordBehavior : ProjectileWeapon
 
         Destroy(gameObject);
         Instantiate(swordParticle, transform.position, Quaternion.identity);
-
-
     }
 }

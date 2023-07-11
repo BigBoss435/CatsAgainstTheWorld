@@ -13,7 +13,7 @@ public class SmellController : WeaponController
     protected override void Attack()
     {
         base.Attack();
-        GameObject spawnedSmell = Instantiate(weaponPrefab);
+        GameObject spawnedSmell = Instantiate(weaponData.Prefab);
         spawnedSmell.transform.position = transform.position;
         spawnedSmell.transform.parent = transform;
     }
