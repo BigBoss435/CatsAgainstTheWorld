@@ -33,6 +33,9 @@ public class EnemySpawner : MonoBehaviour
     public bool maximumEnemiesReached = false;
     public float waveInterval;
 
+    [Header("Spawn Positions")]
+    public List<Transform> relativeSpawnPoints;
+
 
     Transform player;
 
@@ -96,8 +99,7 @@ public class EnemySpawner : MonoBehaviour
                         return;
                     }
 
-                    Vector2 spawnPosition = new Vector2(player.transform.position.x + Random.Range(-10f, 10f), player.transform.position.y + Random.Range(-10f, 10f));
-                    Instantiate(enemyGroup.enemyPrefab, spawnPosition, Quaternion.identity);
+                    Instantiate(enemyGroup.enemyPrefab, player.position + relativeSpawnPoints[Random.Range(0, relativeSpawnPoints.Count)].position, Quaternion.identity);
 
                     enemyGroup.spawnCount++;
                     waves[currentWaveCount].spawnCount++;
