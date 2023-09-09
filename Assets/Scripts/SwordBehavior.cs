@@ -16,7 +16,7 @@ public class SwordBehavior : ProjectileWeapon
     // Update is called once per frame
     void Update()
     {
-        transform.position += direction * weaponData.Speed * Time.deltaTime;
+        transform.position += direction * currentSpeed * Time.deltaTime;
     }
 
     private void OnCollisionEnter2D(Collision2D collision)

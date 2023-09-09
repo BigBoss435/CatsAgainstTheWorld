@@ -1018,7 +1018,6 @@ MonoBehaviour:
   moveDir: {x: 0, y: 0}
   lastHorizontalVector: 0
   lastVerticalVector: 0
-  characterData: {fileID: 11400000, guid: 34dbb4c4962f6d04b8236594ade770c5, type: 2}
 --- !u!95 &1642719031
 Animator:
   serializedVersion: 5
@@ -1065,6 +1064,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   characterData: {fileID: 11400000, guid: 34dbb4c4962f6d04b8236594ade770c5, type: 2}
+  currentHealth: 0
+  currentRecovery: 0
+  currentMoveSpeed: 0
+  currentMight: 0
+  currentProjectileSpeed: 0
+  currentProjectileNumber: 0
   experience: 0
   level: 1
   experienceCap: 0

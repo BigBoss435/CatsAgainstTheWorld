@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 5406117071475896486}
   - component: {fileID: 7255579422481833345}
   - component: {fileID: 8886838577527037833}
+  - component: {fileID: -7433132533618213931}
   m_Layer: 0
   m_Name: Enemy
   m_TagString: Enemy
@@ -172,7 +173,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: caa09a22c7af6424a91590624ddf028c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemyData: {fileID: 11400000, guid: 652e3aeddab7a8f4c86f97b335807015, type: 2}
 --- !u!114 &8886838577527037833
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -186,3 +186,23 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enemyData: {fileID: 11400000, guid: 652e3aeddab7a8f4c86f97b335807015, type: 2}
+  currentMoveSpeed: 0
+  currentHealth: 0
+  currentDamage: 0
+  despawnDistance: 20
+--- !u!114 &-7433132533618213931
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8771856581032710812}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 37ae1349c7eaf9d4d9cedd65672b622b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  drops:
+  - name: Blue Gem
+    intePrefab: {fileID: 1727948366781120107, guid: 658f8a26835b59b47b2e1a98ca035560, type: 3}
+    dropRate: 50

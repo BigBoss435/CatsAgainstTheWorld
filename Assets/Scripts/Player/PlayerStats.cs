@@ -8,12 +8,18 @@ public class PlayerStats : MonoBehaviour
     public CharacterScriptableObject characterData;
 
     //Current Stats
-    float currentHealth;
-    float currentRecovery;
-    float currentMoveSpeed;
-    float currentMight;
-    float currentProjectileSpeed;
-    float currentProjectileNumber;
+    [HideInInspector]
+    public float currentHealth;
+    [HideInInspector]
+    public float currentRecovery;
+    [HideInInspector]
+    public float currentMoveSpeed;
+    [HideInInspector]
+    public float currentMight;
+    [HideInInspector]
+    public float currentProjectileSpeed;
+    [HideInInspector]
+    public float currentProjectileNumber;
 
     //Experience and level  of the player
     [Header ("Experience/Level")]
@@ -73,4 +79,6 @@ public class PlayerStats : MonoBehaviour
         currentProjectileSpeed= characterData.ProjectileSpeed;
         currentProjectileNumber= characterData.ProjectileNumber;
     }
+
+    
 }
