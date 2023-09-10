@@ -138,6 +138,11 @@ public class PlayerStats : MonoBehaviour
         if (currentHealth < characterData.MaxHealth)
         {
             currentHealth += currentRecovery * Time.deltaTime;
+
+            if(currentHealth > characterData.MaxHealth)
+            {
+                currentHealth = characterData.MaxHealth;
+            }
         }
     }
 }
