@@ -20,6 +20,8 @@ public class PlayerStats : MonoBehaviour
     public float currentProjectileSpeed;
     [HideInInspector]
     public float currentProjectileNumber;
+    [HideInInspector]
+    public float currentMagnet;
 
     //Experience and level  of the player
     [Header ("Experience/Level")]
@@ -97,6 +99,7 @@ public class PlayerStats : MonoBehaviour
         currentMight = characterData.Might;
         currentProjectileSpeed= characterData.ProjectileSpeed;
         currentProjectileNumber= characterData.ProjectileNumber;
+        currentMagnet = characterData.Magnet;
     }
 
     public void TakeDamage(float dmg)

@@ -33,4 +33,8 @@ public class CharacterScriptableObject : ScriptableObject
     [SerializeField]
     int projectileNumber;
     public int ProjectileNumber { get => projectileNumber; private set => projectileNumber = value; }
+
+    [SerializeField]
+    int magnet;
+    public int Magnet { get => magnet; private set => magnet = value; }
 }
