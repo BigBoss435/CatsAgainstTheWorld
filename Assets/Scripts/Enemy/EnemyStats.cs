@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class EnemyStats : MonoBehaviour
@@ -57,7 +58,7 @@ public class EnemyStats : MonoBehaviour
         if (col.gameObject.CompareTag("Player"))
         {
             PlayerStats player = col.gameObject.GetComponent<PlayerStats>();
-            //player.TakeDamage(currentDamage);
+            player.TakeDamage(currentDamage);
         }
     }
 

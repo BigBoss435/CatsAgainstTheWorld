@@ -855,6 +855,7 @@ GameObject:
   - component: {fileID: 1642719031}
   - component: {fileID: 1642719032}
   - component: {fileID: 1642719033}
+  - component: {fileID: 1642719034}
   m_Layer: 6
   m_Name: Cat1
   m_TagString: Player
@@ -1073,6 +1074,7 @@ MonoBehaviour:
   experience: 0
   level: 1
   experienceCap: 0
+  invincibilityDuration: 0
   levelRanges:
   - startLevel: 1
     endLevel: 3
@@ -1080,6 +1082,18 @@ MonoBehaviour:
   - startLevel: 4
     endLevel: 5
     experienceCapIncrease: 200
+--- !u!114 &1642719034
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1642719025}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e1eac8941822a0d479722182c505a4d5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1643143288
 GameObject:
   m_ObjectHideFlags: 0

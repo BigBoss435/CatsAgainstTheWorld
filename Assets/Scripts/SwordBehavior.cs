@@ -21,7 +21,6 @@ public class SwordBehavior : ProjectileWeapon
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-
         Destroy(gameObject);
         Instantiate(swordParticle, transform.position, Quaternion.identity);
     }
