@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 673466868636256865}
   - component: {fileID: 8199764336310421319}
   m_Layer: 8
-  m_Name: sword
+  m_Name: Sword Weapon Level 2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -99,7 +99,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d54d55dc016bafb4a8286b1867a76dc4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  weaponData: {fileID: 11400000, guid: 169e25ac3186e93478fc7efaa199e7d1, type: 2}
+  weaponData: {fileID: 11400000, guid: ed8cc84eb47f049678c0fc31bded9679, type: 2}
   destroyAferSeconds: 3
   swordParticle: {fileID: 913022805162174104, guid: 74788087232572c4da35183fc54990e0, type: 3}
 --- !u!61 &673466868636256865

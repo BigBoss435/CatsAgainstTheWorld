@@ -10,10 +10,13 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: a205f0b9ce654f749a08014e835ea4bc, type: 3}
-  m_Name: Knife
+  m_Name: Smell
   m_EditorClassIdentifier: 
-  prefab: {fileID: 8987523971478126642, guid: 7364c987d62fede479f8c9eb8eb2de53, type: 3}
-  damage: 5
-  speed: 10
-  cooldownDuration: 2
-  pierce: 1
+  prefab: {fileID: 4359858867324322890, guid: 3bf922b8632a32449b0f7c104944df85, type: 3}
+  damage: 2
+  speed: 2
+  cooldownDuration: 3
+  pierce: 2
+  level: 1
+  nextLevelPrefab: {fileID: 57605329864827604, guid: a7708d7c39ff34197a0c6fa21c03e54a, type: 3}
+  icon: {fileID: 504819816, guid: 1bdcbab76e9674594b9b79bbfc41d2ad, type: 3}
