@@ -22,6 +22,9 @@ public class PlayerStats : MonoBehaviour
     public float currentProjectileNumber;
     [HideInInspector]
     public float currentMagnet;
+    
+    //Spawned Weapons
+    public List<GameObject> spawnedWeapons;
 
     //Experience and level  of the player
     [Header ("Experience/Level")]
@@ -93,6 +96,9 @@ public class PlayerStats : MonoBehaviour
 
     void Awake()
     {
+        characterData = CharacterSelector.GetData();
+        CharacterSelector.instance.DestroySingleton();
+        
         currentHealth = characterData.MaxHealth;
         currentRecovery = characterData.Recovery;
         currentMoveSpeed = characterData.MoveSpeed;
@@ -100,6 +106,8 @@ public class PlayerStats : MonoBehaviour
         currentProjectileSpeed= characterData.ProjectileSpeed;
         currentProjectileNumber= characterData.ProjectileNumber;
         currentMagnet = characterData.Magnet;
+        
+        SpawnWeapon(characterData.StartingWeapon);
     }
 
     public void TakeDamage(float dmg)
@@ -147,5 +155,12 @@ public class PlayerStats : MonoBehaviour
                 currentHealth = characterData.MaxHealth;
             }
         }
+    }
+
+    public void SpawnWeapon(GameObject weapon)
+    {
+        GameObject spawnedWeapon = Instantiate(weapon, transform.position, Quaternion.identity);
+        spawnedWeapon.transform.SetParent(transform);
+        spawnedWeapons.Add(spawnedWeapon);
     }
 }
