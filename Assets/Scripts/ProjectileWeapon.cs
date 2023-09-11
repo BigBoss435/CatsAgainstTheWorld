@@ -22,16 +22,15 @@ public class ProjectileWeapon : MonoBehaviour
         currentCooldownDuration = weaponData.CooldownDuration;
         currentPierce= weaponData.Pierce;
     }
-    // Start is called before the first frame update
+    
+    public float GetCurrentDamage()
+    {
+        return currentDamage *= FindObjectOfType<PlayerStats>().currentMight;
+    }
+    
     protected virtual void Start()
     {
         Destroy(gameObject, destroyAferSeconds);
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
     }
 
     public void DirectionChecker(Vector3 dir)
@@ -82,14 +81,14 @@ public class ProjectileWeapon : MonoBehaviour
         if (col.CompareTag("Enemy"))
         {
             EnemyStats enemy = col.GetComponent<EnemyStats>();
-            enemy.TakeDamage(currentDamage);
+            enemy.TakeDamage(GetCurrentDamage());
             ReducePierce();
         }
         else if (col.CompareTag("Props"))
         {
             if(col.gameObject.TryGetComponent(out BreakableProps breakable))
             {
-                breakable.TakeDamage(currentDamage);
+                breakable.TakeDamage(GetCurrentDamage());
                 ReducePierce();
             }
         }

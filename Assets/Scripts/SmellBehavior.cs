@@ -18,15 +18,15 @@ public class SmellBehavior : MeleeBehavior
         if (col.CompareTag("Enemy") && !markedEnemies.Contains(col.gameObject))
         {
             EnemyStats enemy = col.GetComponent<EnemyStats>();
-            enemy.TakeDamage(currentDamage);
+            enemy.TakeDamage(GetCurrentDamage());
 
             markedEnemies.Add(col.gameObject);
         }
-        else if (col.CompareTag("Prop"))
+        else if (col.CompareTag("Props"))
         {
             if (col.gameObject.TryGetComponent(out BreakableProps breakable) && !markedEnemies.Contains(col.gameObject))
             {
-                breakable.TakeDamage(currentDamage);
+                breakable.TakeDamage(GetCurrentDamage());
 
                 markedEnemies.Add(col.gameObject);
             }
