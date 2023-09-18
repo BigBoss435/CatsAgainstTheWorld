@@ -4,13 +4,13 @@ using UnityEngine;
 
 public class AnimatorController : MonoBehaviour
 {
-    PlayerMovement pm;
+    PlayerMovement pc;
     SpriteRenderer sr;
 
     // Start is called before the first frame update
     void Start()
     {
-        pm = GetComponent<PlayerMovement>();
+        pc = GetComponent<PlayerMovement>();
         sr = GetComponent<SpriteRenderer>();
     }
 
@@ -22,7 +22,7 @@ public class AnimatorController : MonoBehaviour
 
     public void SpriteDirectionChecker()
     {
-        if (pm.moveDir.x < 0)
+        if (pc.moveDir.x < 0)
         {
             sr.flipX = true;
         }
