@@ -152,10 +152,10 @@ TextureImporter:
       name: CatRun_0
       rect:
         serializedVersion: 2
-        x: 3
-        y: 1
-        width: 24
-        height: 30
+        x: 0
+        y: 0
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -173,10 +173,10 @@ TextureImporter:
       name: CatRun_1
       rect:
         serializedVersion: 2
-        x: 36
-        y: 1
-        width: 23
-        height: 31
+        x: 32
+        y: 0
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -194,10 +194,10 @@ TextureImporter:
       name: CatRun_2
       rect:
         serializedVersion: 2
-        x: 68
-        y: 1
-        width: 23
-        height: 31
+        x: 64
+        y: 0
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -215,10 +215,10 @@ TextureImporter:
       name: CatRun_3
       rect:
         serializedVersion: 2
-        x: 100
-        y: 1
-        width: 23
-        height: 31
+        x: 96
+        y: 0
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -236,10 +236,10 @@ TextureImporter:
       name: CatRun_4
       rect:
         serializedVersion: 2
-        x: 131
-        y: 1
-        width: 24
-        height: 30
+        x: 128
+        y: 0
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -257,10 +257,10 @@ TextureImporter:
       name: CatRun_5
       rect:
         serializedVersion: 2
-        x: 163
-        y: 1
-        width: 24
-        height: 31
+        x: 160
+        y: 0
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -278,10 +278,10 @@ TextureImporter:
       name: CatRun_6
       rect:
         serializedVersion: 2
-        x: 195
-        y: 1
-        width: 24
-        height: 31
+        x: 192
+        y: 0
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
